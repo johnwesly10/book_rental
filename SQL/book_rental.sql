@@ -86,12 +86,6 @@ CREATE TABLE `feedback` (
   `date` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `feedback`
---
-
-INSERT INTO `feedback` (`id`, `user_id`, `username`, `email`, `mobile`, `rating`, `message`, `date`) VALUES
-(1, 1, 'wesly', 'weslywesly37@gmail.com', '8940461802', 5, 'good', '2025-02-28 13:20:38');
 
 -- --------------------------------------------------------
 
@@ -110,14 +104,6 @@ CREATE TABLE `rentals` (
   `rental_status` enum('on rented','returned','overdue','pending') NOT NULL DEFAULT 'pending'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `rentals`
---
-
-INSERT INTO `rentals` (`rental_id`, `user_id`, `book_id`, `rental_date`, `return_date`, `address`, `approval_status`, `rental_status`) VALUES
-(28, 1, 22, '2025-03-17', '2025-03-24', 'tirunelveli', 'approved', 'on rented'),
-(29, 2, 11, '2025-03-17', '2025-03-24', 'tirunelveli', 'pending', 'pending'),
-(31, 1, 40, '2025-03-20', '2025-03-27', 'thirunelveli', 'pending', 'pending');
 
 -- --------------------------------------------------------
 
@@ -189,13 +175,13 @@ ALTER TABLE `books`
 -- AUTO_INCREMENT for table `feedback`
 --
 ALTER TABLE `feedback`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 
 --
 -- AUTO_INCREMENT for table `rentals`
 --
 ALTER TABLE `rentals`
-  MODIFY `rental_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+  MODIFY `rental_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 
 --
 -- AUTO_INCREMENT for table `users`
