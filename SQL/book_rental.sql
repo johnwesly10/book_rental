@@ -140,9 +140,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`user_id`, `username`, `email`, `password`, `created_at`, `role`, `phone_number`) VALUES
-(1, 'wesly', 'weslywesly37@gmail.com', '$2y$10$T1JgKUKhzpigvVshws75z.cfgPfBSCSaiyqfwZviPp1RwNGi3BajS', '2025-01-14 08:00:42', 'user', 8940461802),
-(2, 'john', 'weslywesly57@gmail.com', '$2y$10$D9y.L9PMgN7CwSz8C4vuNeNOr8YPgiZT/3GLr2Yya5NoLxquzE2Ki', '2025-01-14 08:05:13', 'user', 8940461803),
-(4, 'admin', 'admin@gmail.com', '$2y$10$GgykwJL7uGcKzKGxrKlwCO4jNRcIYTqbdJEwFg/Y4SFqhMa3nAcXu', '2025-03-12 19:04:31', 'admin', 8940461804);
+(1, 'admin', 'admin@gmail.com', '$2y$10$GgykwJL7uGcKzKGxrKlwCO4jNRcIYTqbdJEwFg/Y4SFqhMa3nAcXu', '2025-03-12 19:04:31', 'admin', 8940461804);
 
 --
 -- Indexes for dumped tables
@@ -203,7 +201,7 @@ ALTER TABLE `rentals`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- Constraints for dumped tables
