@@ -1,0 +1,5 @@
+DATABASE NAME - book_rental
+
+ADMIN LOGIN 
+USERNAME - admin
+PASSWORD - admin123
